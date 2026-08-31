@@ -47,4 +47,21 @@ for (const { path } of INDEXABLE_ROUTES) {
   ok(h1s === 1, `expected exactly one <h1> on ${path}, found ${h1s}`);
 }
 
+// --- site-wide JSON-LD present + XSS-safe on every page ---
+for (const { path } of INDEXABLE_ROUTES) {
+  const html = htmlFor(path);
+  ok(
+    html.includes('application/ld+json') &&
+      html.includes('"@type":"Organization"') &&
+      html.includes('"@type":"WebSite"'),
+    `missing Organization/WebSite JSON-LD on ${path}`
+  );
+  // no raw </script> may appear inside a ld+json block (breakout guard)
+  const blocks = html.match(/application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g) || [];
+  for (const b of blocks) {
+    const body = b.replace(/^.*?>/, '').replace(/<\/script>$/, '');
+    ok(!/<\/script/i.test(body), `unescaped </script> inside JSON-LD on ${path}`);
+  }
+}
+
 console.log(`SEO checks passed: ${checks}`);

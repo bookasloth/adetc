@@ -3,6 +3,7 @@ import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/seo';
+import { OrganizationJsonLd } from '@/components/JsonLd';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/responsive.css" />
       </head>
       <body>
+        <OrganizationJsonLd />
         <Header />
         <Sidebar />
         <main>{children}</main>
