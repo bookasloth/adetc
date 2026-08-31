@@ -76,4 +76,13 @@ for (const { q, a } of CONTACT_FAQ) {
   ok(contact.includes(esc(a).slice(0, 40)), `FAQ answer not visible on /contact: ${q}`);
 }
 
+// --- blog articles carry BlogPosting + BreadcrumbList ---
+for (const p of ['/tvc-format', '/brand-video', '/video-production-company', '/single-post']) {
+  const html = htmlFor(p);
+  ok(html.includes('"@type":"BlogPosting"'), `missing BlogPosting on ${p}`);
+  ok(html.includes('"datePublished":"2025-'), `missing/invalid datePublished on ${p}`);
+  ok(html.includes('"@type":"BreadcrumbList"'), `missing BreadcrumbList on ${p}`);
+  ok(html.includes('property="og:type" content="article"'), `og:type not article on ${p}`);
+}
+
 console.log(`SEO checks passed: ${checks}`);

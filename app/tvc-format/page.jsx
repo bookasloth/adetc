@@ -1,10 +1,16 @@
 import { buildMetadata } from '@/lib/seo';
+import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd';
+import { getPostByHref, toISODate } from '@/lib/blog-posts';
 
-export const metadata = buildMetadata('/tvc-format');
+export const metadata = buildMetadata('/tvc-format', { ogType: 'article' });
 
 export default function Page() {
+    const post = getPostByHref('/tvc-format');
   return (
     <>
+  {post && <ArticleJsonLd path="/tvc-format" post={post} datePublished={toISODate(post.date)} />}
+  <BreadcrumbJsonLd trail={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }, { name: post?.title || 'Article', path: '/tvc-format' }]} />
+
       {/* Banner Inner Section */}
       <section className="section banner-inner single-post-banner">
         <div className="banner-overlay"></div>

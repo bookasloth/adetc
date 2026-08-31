@@ -1,10 +1,16 @@
 import { buildMetadata } from '@/lib/seo';
+import { ArticleJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd';
+import { getPostByHref, toISODate } from '@/lib/blog-posts';
 
-export const metadata = buildMetadata('/brand-video');
+export const metadata = buildMetadata('/brand-video', { ogType: 'article' });
 
 export default function Page() {
+    const post = getPostByHref('/brand-video');
   return (
     <>
+  {post && <ArticleJsonLd path="/brand-video" post={post} datePublished={toISODate(post.date)} />}
+  <BreadcrumbJsonLd trail={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }, { name: post?.title || 'Article', path: '/brand-video' }]} />
+
   {/* Banner Inner Section */}
   <section className="section banner-inner single-post-banner">
       <div className="banner-overlay"></div>
