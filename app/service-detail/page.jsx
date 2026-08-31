@@ -1,6 +1,6 @@
-export const metadata = {
-  title: 'Video Production Company in Ahmedabad - AdEtc Studios',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/service-detail');
 
 export default function Page() {
   return (

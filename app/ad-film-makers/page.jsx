@@ -1,7 +1,6 @@
-export const metadata = {
-  title: 'Ad Film Makers in Ahmedabad | AdEtc Studios',
-  description: 'AdEtc Studios creates impactful ad films in Ahmedabad, from concept and scripting to filming, direction, editing, and post-production.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/ad-film-makers');
 
 export default function Page() {
   return (

@@ -1,6 +1,6 @@
-export const metadata = {
-  title: 'Pricing/Packages - adetc',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/pricing');
 
 export default function Page() {
   return (

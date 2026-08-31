@@ -1,6 +1,6 @@
-export const metadata = {
-  title: 'Ad Film Makers: How Creative Advertising Films Bring Brands to Life - adetc',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/single-post');
 
 export default function Page() {
   return (

@@ -1,7 +1,6 @@
-export const metadata = {
-  title: 'TVC Format: A Guide to TV Commercials & Production - adetc',
-  description: 'Explore the TVC format, common durations, script structure, production process, and what makes an effective television commercial.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/tvc-format');
 
 export default function Page() {
   return (

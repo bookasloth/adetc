@@ -1,10 +1,10 @@
+import { buildMetadata } from '@/lib/seo';
+
 import BlogCard from '@/components/BlogCard';
 import BlogPagination from '@/components/BlogPagination';
 import { getPaginatedPosts } from '@/lib/blog-posts';
 
-export const metadata = {
-  title: 'Blog/Journal - adetc',
-};
+export const metadata = buildMetadata('/blog');
 
 export default function Page() {
   const posts = getPaginatedPosts(1);

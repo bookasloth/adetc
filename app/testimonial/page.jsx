@@ -1,6 +1,6 @@
-export const metadata = {
-  title: 'Testimonial - adetc',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/testimonial');
 
 export default function Page() {
   return (

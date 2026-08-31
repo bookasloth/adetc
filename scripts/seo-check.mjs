@@ -26,4 +26,22 @@ for (const bot of ['GPTBot', 'ClaudeBot', 'PerplexityBot', 'CCBot', 'Google-Exte
   ok(robots.includes(bot), `robots.txt missing explicit AI crawler rule: ${bot}`);
 }
 
+// --- every indexable page ships a self-referencing canonical + OG title ---
+import { absoluteUrl } from '../lib/seo.js';
+const htmlFor = (path) => {
+  const name = path === '/' ? 'index' : path.replace(/^\//, '');
+  return read(`${APP}/${name}.html`);
+};
+for (const { path } of INDEXABLE_ROUTES) {
+  const html = htmlFor(path);
+  ok(html.length > 0, `built HTML missing for ${path}`);
+  const canonical = absoluteUrl(path);
+  ok(
+    html.includes(`rel="canonical" href="${canonical}"`),
+    `missing/incorrect canonical on ${path} (expected ${canonical})`
+  );
+  ok(html.includes('property="og:title"'), `missing og:title on ${path}`);
+  ok(html.includes('name="twitter:card"'), `missing twitter:card on ${path}`);
+}
+
 console.log(`SEO checks passed: ${checks}`);

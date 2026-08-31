@@ -1,6 +1,7 @@
 import BlogCard from '@/components/BlogCard';
 import BlogPagination from '@/components/BlogPagination';
 import { getPaginatedPosts, TOTAL_PAGES } from '@/lib/blog-posts';
+import { buildMetadata, absoluteUrl } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
@@ -13,9 +14,11 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { page } = await params;
-  return {
-    title: `Blog/Journal - Page ${page} | adetc`,
-  };
+  // Self-referencing canonical: paginated pages list distinct posts.
+  return buildMetadata('/blog', {
+    title: `Blog & Journal — Page ${page}`,
+    canonical: absoluteUrl(`/blog/page/${page}`),
+  });
 }
 
 export default async function Page({ params }) {

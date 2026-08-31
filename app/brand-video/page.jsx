@@ -1,7 +1,6 @@
-export const metadata = {
-  title: 'Brand Video: How Visual Storytelling Builds Brands',
-  description: 'Discover how a compelling brand video helps businesses build trust, connect with audiences, and tell memorable stories that inspire action.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/brand-video');
 
 export default function Page() {
   return (

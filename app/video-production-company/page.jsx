@@ -1,7 +1,6 @@
-export const metadata = {
-  title: 'Video Production Company in Ahmedabad: What They Do - adetc',
-  description: 'Learn what a video production company in Ahmedabad does, from concept and scripting to filming, editing, and delivering videos for brands.',
-};
+import { buildMetadata } from '@/lib/seo';
+
+export const metadata = buildMetadata('/video-production-company');
 
 export default function Page() {
   return (
