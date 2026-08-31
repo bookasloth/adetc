@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
-import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/seo';
+import { SITE_URL, SITE_NAME } from '@/lib/seo';
 import { OrganizationJsonLd } from '@/components/JsonLd';
 
 export const metadata = {
@@ -12,11 +12,11 @@ export const metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'adetc is a full-service film production studio in Ahmedabad delivering bold visuals and powerful narratives, from commercials to creative films.',
+    'AdEtc Studios is a full-service film production studio in Ahmedabad delivering bold visuals and powerful narratives, from commercials to creative films.',
   openGraph: {
     type: 'website',
     siteName: SITE_NAME,
-    images: [DEFAULT_OG_IMAGE],
+    // og:image supplied by app/opengraph-image.jsx (file convention).
   },
   twitter: { card: 'summary_large_image' },
 };

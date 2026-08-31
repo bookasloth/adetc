@@ -41,6 +41,7 @@ for (const { path } of INDEXABLE_ROUTES) {
     `missing/incorrect canonical on ${path} (expected ${canonical})`
   );
   ok(html.includes('property="og:title"'), `missing og:title on ${path}`);
+  ok(html.includes('property="og:image"'), `missing og:image on ${path}`);
   ok(html.includes('name="twitter:card"'), `missing twitter:card on ${path}`);
   // exactly one <h1> per page (ignore SVG <title>, count heading tags only)
   const h1s = (html.match(/<h1[\s>]/g) || []).length;
