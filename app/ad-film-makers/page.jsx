@@ -10,7 +10,7 @@ export default function Page() {
         <div className="banner-overlay"></div>
         <div className="hero-container">
           <div className="banner-inner-container">
-            <h2>Ad Film Makers in Ahmedabad</h2>
+            <h1>Ad Film Makers in Ahmedabad</h1>
             <nav className="breadcrumb">
               <a href="/" className="breadcrumb-item">Home</a>
               <span className="separator">/</span>

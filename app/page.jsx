@@ -14,14 +14,16 @@ export default function Page() {
           <div className="d-flex flex-column gspace-2 align-items-center">
             <div className="d-flex flex-column flex-md-row gspace-2 justify-content-center justify-content-md-between align-items-center">
               <div className="home-title-container">
-                <div className="d-flex flex-row gspace-y-0 gspace-x-1 align-items-center">
-                                  <h1>Str</h1>
-                  <div className="home-spacer">
-                                      <div className="spacer-inner"></div>
-                  </div>
-                                  <h1>ng</h1>
-                </div>
-                              <h1>Crafting Visuals</h1>
+                <h1 className="home-title">
+                  <span className="d-flex flex-row gspace-y-0 gspace-x-1 align-items-center">
+                    <span>Str</span>
+                    <span className="home-spacer d-block">
+                      <span className="spacer-inner d-block"></span>
+                    </span>
+                    <span>ng</span>
+                  </span>
+                  <span className="d-block">Crafting Visuals</span>
+                </h1>
               </div>
               <div className="home-avatar-container">
                               <div className="d-flex flex-row align-items-center"><img src="/assets/images/Photo-12.jpg" alt="Banner Avatar" className="banner-avatar" /> <img src="/assets/images/Photo-5.jpg" alt="Banner Avatar" className="banner-avatar" /> <img src="/assets/images/composite-collage-of-people-expressing-positive-em-JJYFLK3.jpg" alt="Banner Avatar" className="banner-avatar" /> <img src="/assets/images/Gp-1.png" alt="Banner Avatar" className="banner-avatar" /></div>

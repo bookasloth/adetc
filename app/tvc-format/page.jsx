@@ -10,7 +10,7 @@ export default function Page() {
         <div className="banner-overlay"></div>
         <div className="hero-container">
           <div className="banner-inner-container">
-            <h2>TVC Format: Understanding Commercial Duration, Script Structure and Production</h2>
+            <h1>TVC Format: Understanding Commercial Duration, Script Structure and Production</h1>
             <nav className="breadcrumb">
               <a href="/" className="breadcrumb-item">Home</a>
               <span className="separator">/</span>

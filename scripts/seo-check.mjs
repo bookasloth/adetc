@@ -42,6 +42,9 @@ for (const { path } of INDEXABLE_ROUTES) {
   );
   ok(html.includes('property="og:title"'), `missing og:title on ${path}`);
   ok(html.includes('name="twitter:card"'), `missing twitter:card on ${path}`);
+  // exactly one <h1> per page (ignore SVG <title>, count heading tags only)
+  const h1s = (html.match(/<h1[\s>]/g) || []).length;
+  ok(h1s === 1, `expected exactly one <h1> on ${path}, found ${h1s}`);
 }
 
 console.log(`SEO checks passed: ${checks}`);

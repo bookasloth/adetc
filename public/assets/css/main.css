@@ -3956,3 +3956,9 @@ main p {
     text-align: justify;
 }
 
+
+/* SEO W1: inner hero promoted h2->h1 for semantics; keep original 80px hero size */
+.banner-inner h1 {
+    font-size: 80px;
+    line-height: 1em;
+}
