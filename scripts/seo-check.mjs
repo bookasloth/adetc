@@ -92,4 +92,11 @@ for (const p of ['/tvc-format', '/brand-video', '/video-production-company', '/s
   ok(html.includes('"@type":"OfferCatalog"'), 'missing OfferCatalog on /services');
 }
 
+// --- llms.txt present with title + sitemap link ---
+{
+  const llms = read(`${APP}/llms.txt.body`) || read(`${APP}/llms.txt`);
+  ok(/^#\s+\S/m.test(llms), 'llms.txt missing H1 title');
+  ok(/sitemap\.xml/.test(llms), 'llms.txt missing sitemap link');
+}
+
 console.log(`SEO checks passed: ${checks}`);
