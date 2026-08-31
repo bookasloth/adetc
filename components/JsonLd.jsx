@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME, absoluteUrl } from '@/lib/seo';
+import { SITE_URL, SITE_NAME, absoluteUrl, BUSINESS } from '@/lib/seo';
 
 // Server component. Emits schema.org JSON-LD.
 // XSS-safe: escape '<' so a "</script>" in any field can't break out of the tag.
@@ -15,9 +15,11 @@ export function JsonLd({ data }) {
   );
 }
 
-// Site-wide Organization + WebSite graph. Rendered once in the root layout.
-// TODO(adetc): add address/telephone (LocalBusiness) + real sameAs profile URLs.
+// Site-wide Organization + WebSite + LocalBusiness graph. Rendered in root layout.
 export function OrganizationJsonLd() {
+  const description =
+    'AdEtc Studios is a full-service film and video production studio in Ahmedabad, producing commercials, brand videos, and creative films.';
+  const logo = absoluteUrl('/assets/images/adetc-logo.png');
   const data = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -26,10 +28,9 @@ export function OrganizationJsonLd() {
         '@id': `${SITE_URL}/#organization`,
         name: SITE_NAME,
         url: SITE_URL,
-        logo: absoluteUrl('/assets/images/adetc-logo.png'),
-        description:
-          'adetc is a full-service film and video production studio in Ahmedabad, producing commercials, brand videos, and creative films.',
-        // sameAs: ['https://instagram.com/...', 'https://youtube.com/...'],
+        logo,
+        description,
+        sameAs: BUSINESS.sameAs,
       },
       {
         '@type': 'WebSite',
@@ -37,6 +38,23 @@ export function OrganizationJsonLd() {
         url: SITE_URL,
         name: SITE_NAME,
         publisher: { '@id': `${SITE_URL}/#organization` },
+      },
+      {
+        '@type': 'LocalBusiness',
+        '@id': `${SITE_URL}/#localbusiness`,
+        name: SITE_NAME,
+        url: SITE_URL,
+        image: logo,
+        description,
+        telephone: BUSINESS.telephone,
+        email: BUSINESS.email,
+        address: {
+          '@type': 'PostalAddress',
+          ...BUSINESS.address,
+        },
+        areaServed: 'IN',
+        parentOrganization: { '@id': `${SITE_URL}/#organization` },
+        sameAs: BUSINESS.sameAs,
       },
     ],
   };

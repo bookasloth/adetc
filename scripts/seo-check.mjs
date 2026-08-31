@@ -53,8 +53,9 @@ for (const { path } of INDEXABLE_ROUTES) {
   ok(
     html.includes('application/ld+json') &&
       html.includes('"@type":"Organization"') &&
-      html.includes('"@type":"WebSite"'),
-    `missing Organization/WebSite JSON-LD on ${path}`
+      html.includes('"@type":"WebSite"') &&
+      html.includes('"@type":"LocalBusiness"'),
+    `missing Organization/WebSite/LocalBusiness JSON-LD on ${path}`
   );
   // no raw </script> may appear inside a ld+json block (breakout guard)
   const blocks = html.match(/application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g) || [];

@@ -9,14 +9,24 @@ export default function robots() {
     rules: [
       { userAgent: '*', allow: '/' },
       // Generative / AI crawlers — explicit allow (documented decision).
-      { userAgent: 'GPTBot', allow: '/' },
-      { userAgent: 'OAI-SearchBot', allow: '/' },
-      { userAgent: 'ChatGPT-User', allow: '/' },
-      { userAgent: 'ClaudeBot', allow: '/' },
-      { userAgent: 'Claude-Web', allow: '/' },
-      { userAgent: 'PerplexityBot', allow: '/' },
-      { userAgent: 'Google-Extended', allow: '/' },
-      { userAgent: 'CCBot', allow: '/' },
+      // Superset of what the live site already serves; keep in sync.
+      {
+        userAgent: [
+          'GPTBot',
+          'OAI-SearchBot',
+          'ChatGPT-User',
+          'ClaudeBot',
+          'Claude-Web',
+          'anthropic-ai',
+          'PerplexityBot',
+          'Perplexity-User',
+          'Google-Extended',
+          'Applebot-Extended',
+          'Bytespider',
+          'CCBot',
+        ],
+        allow: '/',
+      },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
