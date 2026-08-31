@@ -41,16 +41,16 @@ export default function Page() {
                 </a>
               </div>
               <div className="d-flex flex-row gspace-2 align-items-center">
-                <a href="https://www.instagram.com/" className="social-icon">
+                <a href="https://www.instagram.com/adetc_studios/" className="social-icon">
                                   <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/" className="social-icon">
+                <a href="https://www.facebook.com/profile.php?id=61578905199852" className="social-icon">
                                   <i className="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://www.x.com/" className="social-icon">
+                <a href="https://x.com/AdEtcstudios" className="social-icon">
                                   <i className="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="https://www.youtube.com/" className="social-icon">
+                <a href="https://www.youtube.com/@AdEtcStudios" className="social-icon">
                                   <i className="fa-brands fa-youtube"></i>
                 </a>
               </div>
@@ -757,13 +757,13 @@ export default function Page() {
                   <img loading="lazy" decoding="async" src="/assets/images/chirag.jpeg" alt="Chirag Sharma" className="img-fluid" />
                   <div className="team-social-overlay">
                     <div className="d-flex flex-row align-items-center gspace-1">
-                      <a href="https://www.instagram.com/" className="social-icon">
+                      <a href="https://www.instagram.com/adetc_studios/" className="social-icon">
                         <i className="fa-brands fa-instagram"></i>
                       </a>
-                      <a href="https://www.facebook.com/" className="social-icon">
+                      <a href="https://www.facebook.com/profile.php?id=61578905199852" className="social-icon">
                         <i className="fa-brands fa-facebook"></i>
                       </a>
-                      <a href="https://www.x.com/" className="social-icon">
+                      <a href="https://x.com/AdEtcstudios" className="social-icon">
                         <i className="fa-brands fa-x-twitter"></i>
                       </a>
                     </div>
@@ -781,13 +781,13 @@ export default function Page() {
                   <img loading="lazy" decoding="async" src="/assets/images/chinmay.jpeg" alt="Chinmay Parmar" className="img-fluid" />
                   <div className="team-social-overlay">
                     <div className="d-flex flex-row align-items-center gspace-1">
-                      <a href="https://www.instagram.com/" className="social-icon">
+                      <a href="https://www.instagram.com/adetc_studios/" className="social-icon">
                         <i className="fa-brands fa-instagram"></i>
                       </a>
-                      <a href="https://www.facebook.com/" className="social-icon">
+                      <a href="https://www.facebook.com/profile.php?id=61578905199852" className="social-icon">
                         <i className="fa-brands fa-facebook"></i>
                       </a>
-                      <a href="https://www.x.com/" className="social-icon">
+                      <a href="https://x.com/AdEtcstudios" className="social-icon">
                         <i className="fa-brands fa-x-twitter"></i>
                       </a>
                     </div>
@@ -805,13 +805,13 @@ export default function Page() {
                   <img loading="lazy" decoding="async" src="/assets/images/krutika.jpeg" alt="Krutika Sharma" className="img-fluid" />
                   <div className="team-social-overlay">
                     <div className="d-flex flex-row align-items-center gspace-1">
-                      <a href="https://www.instagram.com/" className="social-icon">
+                      <a href="https://www.instagram.com/adetc_studios/" className="social-icon">
                         <i className="fa-brands fa-instagram"></i>
                       </a>
-                      <a href="https://www.facebook.com/" className="social-icon">
+                      <a href="https://www.facebook.com/profile.php?id=61578905199852" className="social-icon">
                         <i className="fa-brands fa-facebook"></i>
                       </a>
-                      <a href="https://www.x.com/" className="social-icon">
+                      <a href="https://x.com/AdEtcstudios" className="social-icon">
                         <i className="fa-brands fa-x-twitter"></i>
                       </a>
                     </div>

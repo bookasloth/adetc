@@ -28,9 +28,9 @@ const socialLabels = {
 };
 
 const defaultSocial = {
-  instagram: "https://www.instagram.com/",
-  facebook: "https://www.facebook.com/",
-  twitter: "https://x.com/",
+  instagram: "https://www.instagram.com/adetc_studios/",
+  facebook: "https://www.facebook.com/profile.php?id=61578905199852",
+  twitter: "https://x.com/AdEtcstudios",
 };
 
 export default function TeamCard({ member, index = 0 }) {

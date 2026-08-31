@@ -37,7 +37,7 @@ export default function Page() {
           <div className="col col-lg-7">
             <div className="d-flex flex-column gspace-2 justify-content-end h-100">
                           <h3>About the Project</h3>
-                          <p>Urban Soul” is a high-energy music video collaboration with independent artist Jayverra, blending gritty city aesthetics with smooth R&B vibes. Set in the heart of downtown L.A., this project captures the raw essence of street life and transforms it into an emotionally driven visual narrative.</p>
+                          <p>Urban Soul” is a high-energy music video collaboration with independent artist Jayverra, blending gritty city aesthetics with smooth R&B vibes. Set in the heart of the city, this project captures the raw essence of street life and transforms it into an emotionally driven visual narrative.</p>
                           <p>We worked closely with the artist to develop a video concept that reflects the emotions of the lyrics, the tempo of the beat, and the visual identity of the track — resulting in a production that feels both cinematic and personal.</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Page() {
                           <h5>Client: Jayverra (Independent Music Artist)</h5>
                           <h5>Project Title: Urban Soul</h5>
                           <h5>Category: Music Video</h5>
-                          <h5>Location: Downtown Los Angeles, USA</h5>
+                          <h5>Location: Ahmedabad, India</h5>
                           <h5>Duration: 3 minutes 45 seconds</h5>
                           <h5>Delivery Format: 4K, optimized for YouTube</h5>
             </div>

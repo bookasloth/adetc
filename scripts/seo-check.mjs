@@ -113,4 +113,14 @@ for (const p of ['/about', '/team', '/single-post']) {
   ok(html.includes('loading="lazy"'), `no lazy images on ${p}`);
 }
 
+// --- no stale US-template copy / dead social links in built pages ---
+for (const { path } of INDEXABLE_ROUTES) {
+  const html = htmlFor(path);
+  ok(!/Los Angeles|Downtown L\.A\.|, USA/.test(html), `stale US location copy on ${path}`);
+  ok(
+    !/href="https:\/\/(www\.)?(instagram|facebook|youtube|linkedin|x)\.com\/"/.test(html),
+    `bare (non-profile) social link on ${path}`
+  );
+}
+
 console.log(`SEO checks passed: ${checks}`);
