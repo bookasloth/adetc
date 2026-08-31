@@ -4,7 +4,7 @@ export default function Sidebar() {
       <div className="sidebar-overlay"></div>
     <div className="sidebar">
       <div className="sidebar-header">
-              <div className="logo"><img src="/assets/images/adetc-logo.png" className="logo" alt="Logo" /></div>
+              <div className="logo"><img loading="lazy" decoding="async" src="/assets/images/adetc-logo.png" className="logo" alt="Logo" /></div>
         <button className="close-btn">
                   <span>X</span>
         </button>

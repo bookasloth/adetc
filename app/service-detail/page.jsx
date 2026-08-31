@@ -44,7 +44,7 @@ export default function Page() {
           </div>
           <div className="col">
             <div className="image-container service-detail-image">
-                          <img src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Behind the Scenes at AdEtc Studios" className="img-fluid" />
+                          <img loading="lazy" decoding="async" src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Behind the Scenes at AdEtc Studios" className="img-fluid" />
             </div>
           </div>
         </div>
@@ -405,7 +405,7 @@ export default function Page() {
           <div className="service-detail-sidebar">
             <div className="service-sidebar-card">
               <div className="image-container service-sidebar-image">
-                <img src="/assets/images/two-confident-coworkers-indian-bearded-businessman-QHK94WX.jpg" alt="AdEtc Studios Team" className="img-fluid" />
+                <img loading="lazy" decoding="async" src="/assets/images/two-confident-coworkers-indian-bearded-businessman-QHK94WX.jpg" alt="AdEtc Studios Team" className="img-fluid" />
               </div>
               <ul className="service-facts">
                 <li>
@@ -462,7 +462,7 @@ export default function Page() {
                       <a href="/contact" className="btn btn-accent-primary">Free Consultation</a>
           </div>
         </div>
-              <div className="contact-cta-image"><img src="/assets/images/envato-labs-image-edit-1-e1752829112223.png" alt="Contact CTA" className="img-fluid" /></div>
+              <div className="contact-cta-image"><img loading="lazy" decoding="async" src="/assets/images/envato-labs-image-edit-1-e1752829112223.png" alt="Contact CTA" className="img-fluid" /></div>
       </div>
     </div>
   </section>

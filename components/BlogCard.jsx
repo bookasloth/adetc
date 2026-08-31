@@ -3,7 +3,7 @@ export default function BlogCard({ post }) {
     <div className="col">
       <div className="card card-blog">
         <div className="image-container blog-image">
-          <img src={post.image} alt="Blog Image" className="img-fluid" />
+          <img loading="lazy" decoding="async" src={post.image} alt="Blog Image" className="img-fluid" />
         </div>
         <div className="card-blog-content">
           <div className="d-flex flex-row align-items-center justify-content-between">

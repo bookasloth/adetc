@@ -100,4 +100,12 @@ for (const p of ['/tvc-format', '/brand-video', '/video-production-company', '/s
   ok(/sitemap\.xml/.test(llms), 'llms.txt missing sitemap link');
 }
 
+// --- images lazy-loaded: no <img> without loading= on content pages ---
+for (const p of ['/about', '/team', '/single-post']) {
+  const html = htmlFor(p);
+  const noLoading = (html.match(/<img(?![^>]*\bloading=)[^>]*>/g) || []).length;
+  ok(noLoading === 0, `${noLoading} <img> without loading= on ${p}`);
+  ok(html.includes('loading="lazy"'), `no lazy images on ${p}`);
+}
+
 console.log(`SEO checks passed: ${checks}`);

@@ -35,35 +35,35 @@ export default function Page() {
                   <h4>Recent Blog</h4>
                   <div className="recent-blog-list">
                     <a href="/single-post" className="recent-blog-item">
-                      <img src="/assets/images/woman-operating-video-camera-in-neon-lights-NNLG5VA.jpg" alt="Blog Image" />
+                      <img loading="lazy" decoding="async" src="/assets/images/woman-operating-video-camera-in-neon-lights-NNLG5VA.jpg" alt="Blog Image" />
                       <div className="recent-blog-content">
                         <span className="recent-blog-date">19 Jul 2025</span>
                         <h5 className="recent-blog-heading">Ad Film Makers: How Creative Advertising Films Bring Brands to Life</h5>
                       </div>
                     </a>
                     <a href="/brand-video" className="recent-blog-item">
-                      <img src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Blog Image" />
+                      <img loading="lazy" decoding="async" src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Blog Image" />
                       <div className="recent-blog-content">
                         <span className="recent-blog-date">19 Jul 2025</span>
                         <h5 className="recent-blog-heading">Brand Video: How Powerful Visual Storytelling Builds Lasting Brands</h5>
                       </div>
                     </a>
                     <a href="/tvc-format" className="recent-blog-item">
-                      <img src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Blog Image" />
+                      <img loading="lazy" decoding="async" src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Blog Image" />
                       <div className="recent-blog-content">
                         <span className="recent-blog-date">19 Jul 2025</span>
                         <h5 className="recent-blog-heading">TVC Format: Understanding Commercial Duration, Script Structure and Production</h5>
                       </div>
                     </a>
                     <a href="/single-post" className="recent-blog-item">
-                      <img src="/assets/images/two-confident-coworkers-indian-bearded-businessman-QHK94WX.jpg" alt="Blog Image" />
+                      <img loading="lazy" decoding="async" src="/assets/images/two-confident-coworkers-indian-bearded-businessman-QHK94WX.jpg" alt="Blog Image" />
                       <div className="recent-blog-content">
                         <span className="recent-blog-date">19 Jul 2025</span>
                         <h5 className="recent-blog-heading">Choosing the Right Lenses for Storytelling</h5>
                       </div>
                     </a>
                     <a href="/single-post" className="recent-blog-item">
-                      <img src="/assets/images/photographers-setting-cameras-before-shooting-65ME2DS.jpg" alt="Blog Image" />
+                      <img loading="lazy" decoding="async" src="/assets/images/photographers-setting-cameras-before-shooting-65ME2DS.jpg" alt="Blog Image" />
                       <div className="recent-blog-content">
                         <span className="recent-blog-date">19 Jul 2025</span>
                         <h5 className="recent-blog-heading">Beginner's Guide to Filmmaking with Minimal Budget</h5>
@@ -100,7 +100,7 @@ export default function Page() {
             </div>
             <div className="col col-lg-8 order-1 order-lg-2">
               <div className="d-flex flex-column gspace-2">
-                <div className="image-container post-image"><img src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Single Post" className="img-fluid" /></div>
+                <div className="image-container post-image"><img loading="lazy" decoding="async" src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Single Post" className="img-fluid" /></div>
                 <div className="d-flex flex-row flex-wrap align-items-center gspace-3 post-meta">
                   <div className="d-flex flex-row gspace-1 align-items-center">
                     <i className="fa-solid fa-user accent-color"></i>
@@ -153,7 +153,7 @@ export default function Page() {
                 <p>This format is particularly useful for launches, emotional campaigns, festive communication, or concepts where the audience needs more context before the payoff.</p>
                 <p>The important point is that a longer commercial isn't automatically better. The right duration depends on the idea and the message.</p>
                 <div className="image-container post-inner-image">
-                  <img src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Behind the scenes during a TVC shoot" className="img-fluid" />
+                  <img loading="lazy" decoding="async" src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Behind the scenes during a TVC shoot" className="img-fluid" />
                 </div>
 
                 <h3>How Is a TVC Script Written?</h3>
@@ -209,7 +209,7 @@ export default function Page() {
                 <p>The finished asset must then be prepared according to the requirements of the broadcaster or platform.</p>
                 <p>Technical requirements can differ between channels, so the production team should always work from the current delivery specifications rather than assuming one universal file format.</p>
                 <div className="image-container post-inner-image">
-                  <img src="/assets/images/film-industry-7ZLFY7L.jpg" alt="TVC post-production workflow" className="img-fluid" />
+                  <img loading="lazy" decoding="async" src="/assets/images/film-industry-7ZLFY7L.jpg" alt="TVC post-production workflow" className="img-fluid" />
                 </div>
 
                 <h3>TVC Format Is Not Just About Duration</h3>
@@ -320,7 +320,7 @@ export default function Page() {
                 <a href="/contact" className="btn btn-accent-primary">Free Consultation</a>
               </div>
             </div>
-            <div className="contact-cta-image"><img src="/assets/images/envato-labs-image-edit-1-e1752829112223.png" alt="Contact CTA" className="img-fluid" /></div>
+            <div className="contact-cta-image"><img loading="lazy" decoding="async" src="/assets/images/envato-labs-image-edit-1-e1752829112223.png" alt="Contact CTA" className="img-fluid" /></div>
           </div>
         </div>
       </section>
@@ -332,7 +332,7 @@ export default function Page() {
             <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-3">
               <div className="col">
                 <div className="card card-blog">
-                  <div className="image-container blog-image"><img src="/assets/images/woman-operating-video-camera-in-neon-lights-NNLG5VA.jpg" alt="Blog Image" className="img-fluid" /></div>
+                  <div className="image-container blog-image"><img loading="lazy" decoding="async" src="/assets/images/woman-operating-video-camera-in-neon-lights-NNLG5VA.jpg" alt="Blog Image" className="img-fluid" /></div>
                   <div className="card-blog-content">
                     <div className="d-flex flex-row align-items-center justify-content-between">
                       <div className="d-flex flex-row gspace-1 align-items-center">
@@ -351,7 +351,7 @@ export default function Page() {
               </div>
               <div className="col">
                 <div className="card card-blog">
-                  <div className="image-container blog-image"><img src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Blog Image" className="img-fluid" /></div>
+                  <div className="image-container blog-image"><img loading="lazy" decoding="async" src="/assets/images/video-production-backstage-behind-the-scenes-of-cr-L3RXVKA.jpg" alt="Blog Image" className="img-fluid" /></div>
                   <div className="card-blog-content">
                     <div className="d-flex flex-row align-items-center justify-content-between">
                       <div className="d-flex flex-row gspace-1 align-items-center">
@@ -370,7 +370,7 @@ export default function Page() {
               </div>
               <div className="col">
                 <div className="card card-blog">
-                  <div className="image-container blog-image"><img src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Blog Image" className="img-fluid" /></div>
+                  <div className="image-container blog-image"><img loading="lazy" decoding="async" src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Blog Image" className="img-fluid" /></div>
                   <div className="card-blog-content">
                     <div className="d-flex flex-row align-items-center justify-content-between">
                       <div className="d-flex flex-row gspace-1 align-items-center">

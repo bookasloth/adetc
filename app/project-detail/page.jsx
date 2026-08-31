@@ -164,16 +164,16 @@ export default function Page() {
           <div className="col col-lg-8">
             <div className="row row-cols-md-2 row-cols-1 grid-spacer-2">
               <div className="col">
-                              <div className="image-container"><img src="/assets/images/operator-setting-his-camera-before-shooting-PURRF9Y.jpg" alt="Project Detail" className="img-fluid" /></div>
+                              <div className="image-container"><img loading="lazy" decoding="async" src="/assets/images/operator-setting-his-camera-before-shooting-PURRF9Y.jpg" alt="Project Detail" className="img-fluid" /></div>
               </div>
               <div className="col">
-                              <div className="image-container"><img src="/assets/images/woman-operating-video-camera-in-neon-lights-NNLG5VA.jpg" alt="Project Detail" className="img-fluid" /></div>
+                              <div className="image-container"><img loading="lazy" decoding="async" src="/assets/images/woman-operating-video-camera-in-neon-lights-NNLG5VA.jpg" alt="Project Detail" className="img-fluid" /></div>
               </div>
               <div className="col">
-                              <div className="image-container"><img src="/assets/images/photographers-setting-cameras-before-shooting-65ME2DS.jpg" alt="Project Detail" className="img-fluid" /></div>
+                              <div className="image-container"><img loading="lazy" decoding="async" src="/assets/images/photographers-setting-cameras-before-shooting-65ME2DS.jpg" alt="Project Detail" className="img-fluid" /></div>
               </div>
               <div className="col">
-                              <div className="image-container"><img src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Project Detail" className="img-fluid" /></div>
+                              <div className="image-container"><img loading="lazy" decoding="async" src="/assets/images/cameraman-operating-equipment-in-studio-T3LZ2B2.jpg" alt="Project Detail" className="img-fluid" /></div>
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function Page() {
                       <a href="/contact" className="btn btn-accent-primary">Free Consultation</a>
           </div>
         </div>
-              <div className="contact-cta-image"><img src="/assets/images/envato-labs-image-edit-1-e1752829112223.png" alt="Contact CTA" className="img-fluid" /></div>
+              <div className="contact-cta-image"><img loading="lazy" decoding="async" src="/assets/images/envato-labs-image-edit-1-e1752829112223.png" alt="Contact CTA" className="img-fluid" /></div>
       </div>
     </div>
   </section>
