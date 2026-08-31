@@ -3,11 +3,17 @@ import { ServiceJsonLd } from '@/components/JsonLd';
 
 export const metadata = buildMetadata('/services');
 
+// Mirrors the visible service accordion on this page.
 const OFFERINGS = [
-  { name: 'Creative Film Direction', description: 'Concept-to-screen direction that shapes compelling brand narratives.' },
-  { name: 'Cinematic Visual Style', description: 'Industry-grade cameras, lighting, and techniques for standout visuals.' },
-  { name: 'Expert Post Production', description: 'Editing, color grading, audio mixing, VFX, and final polish.' },
-  { name: 'Global Project Reach', description: 'Productions managed remotely and on-location across India and beyond.' },
+  { name: 'Ad Films' },
+  { name: 'Campaign Film' },
+  { name: 'Corporate Films' },
+  { name: 'Documentary Films' },
+  { name: 'Music Videos' },
+  { name: 'Product Shoot' },
+  { name: 'End-To-End Production' },
+  { name: 'Feature Film' },
+  { name: 'Creative Consulting' },
 ];
 
 export default function Page() {

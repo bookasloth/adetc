@@ -91,6 +91,11 @@ for (const p of ['/tvc-format', '/brand-video', '/video-production-company', '/s
   const html = htmlFor('/services');
   ok(html.includes('"@type":"Service"'), 'missing Service schema on /services');
   ok(html.includes('"@type":"OfferCatalog"'), 'missing OfferCatalog on /services');
+  // schema offerings must mirror the visible service accordion
+  for (const name of ['Ad Films', 'Corporate Films', 'Music Videos']) {
+    ok(html.includes(`"name":"${name}"`), `Service schema missing offering: ${name}`);
+    ok(html.includes(`>${name}<`), `service "${name}" not visible on /services`);
+  }
 }
 
 // --- llms.txt present with title + sitemap link ---
