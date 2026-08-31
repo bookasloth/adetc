@@ -65,4 +65,15 @@ for (const { path } of INDEXABLE_ROUTES) {
   }
 }
 
+// --- contact FAQPage: schema present + every Q&A also visible on the page ---
+import { CONTACT_FAQ } from '../lib/faq.js';
+const contact = htmlFor('/contact');
+ok(contact.includes('"@type":"FAQPage"'), 'contact missing FAQPage JSON-LD');
+const esc = (s) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&#x27;');
+for (const { q, a } of CONTACT_FAQ) {
+  ok(contact.includes(esc(q)), `FAQ question not visible on /contact: ${q}`);
+  ok(contact.includes(esc(a).slice(0, 40)), `FAQ answer not visible on /contact: ${q}`);
+}
+
 console.log(`SEO checks passed: ${checks}`);

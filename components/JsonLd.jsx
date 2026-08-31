@@ -15,6 +15,20 @@ export function JsonLd({ data }) {
   );
 }
 
+// FAQPage schema. `items` = [{ q, a }] — must mirror the visible on-page Q&A.
+export function FaqJsonLd({ items }) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+  return <JsonLd data={data} />;
+}
+
 // Site-wide Organization + WebSite + LocalBusiness graph. Rendered in root layout.
 export function OrganizationJsonLd() {
   const description =
