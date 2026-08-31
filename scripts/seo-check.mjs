@@ -85,4 +85,11 @@ for (const p of ['/tvc-format', '/brand-video', '/video-production-company', '/s
   ok(html.includes('property="og:type" content="article"'), `og:type not article on ${p}`);
 }
 
+// --- services page carries Service + OfferCatalog ---
+{
+  const html = htmlFor('/services');
+  ok(html.includes('"@type":"Service"'), 'missing Service schema on /services');
+  ok(html.includes('"@type":"OfferCatalog"'), 'missing OfferCatalog on /services');
+}
+
 console.log(`SEO checks passed: ${checks}`);

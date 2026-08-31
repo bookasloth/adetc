@@ -29,6 +29,27 @@ export function FaqJsonLd({ items }) {
   return <JsonLd data={data} />;
 }
 
+// Service schema for the services page. `offerings` = [{ name, description }].
+export function ServiceJsonLd({ offerings }) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Video & Film Production',
+    provider: { '@id': `${SITE_URL}/#organization` },
+    areaServed: { '@type': 'City', name: 'Ahmedabad' },
+    url: absoluteUrl('/services'),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Production Services',
+      itemListElement: offerings.map(({ name, description }) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name, description },
+      })),
+    },
+  };
+  return <JsonLd data={data} />;
+}
+
 // BlogPosting schema for an article page. `post` = a lib/blog-posts entry.
 export function ArticleJsonLd({ path, post, datePublished }) {
   const org = { '@id': `${SITE_URL}/#organization` };
