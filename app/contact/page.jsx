@@ -1,6 +1,11 @@
-export const metadata = {
-  title: 'Contact Us - adetc',
-};
+import { pageMetadata } from '@/lib/seo';
+
+export const metadata = pageMetadata({
+  title: 'Contact Us',
+  description:
+    'Get in touch with AdEtc Studios in Ahmedabad to plan your next ad film, brand video or TVC. Call +91 9727000197 or send us your project brief.',
+  path: '/contact',
+});
 
 export default function Page() {
   return (
@@ -60,16 +65,16 @@ export default function Page() {
               <div className="d-flex flex-column gspace-2">
                               <span className="contact-info-heading">Social Media</span>
                 <div className="d-flex flex-row gspace-2 align-items-center">
-                  <a href="https://www.instagram.com/" className="social-icon">
+                  <a href="https://www.instagram.com/adetc_studios/" className="social-icon">
                                       <i className="fa-brands fa-instagram"></i>
                   </a>
-                  <a href="https://www.facebook.com/" className="social-icon">
+                  <a href="https://www.facebook.com/profile.php?id=61578905199852" className="social-icon">
                                       <i className="fa-brands fa-facebook"></i>
                   </a>
-                  <a href="https://www.x.com/" className="social-icon">
+                  <a href="https://x.com/AdEtcstudios" className="social-icon">
                                       <i className="fa-brands fa-x-twitter"></i>
                   </a>
-                  <a href="https://www.youtube.com/" className="social-icon">
+                  <a href="https://www.youtube.com/@AdEtcStudios" className="social-icon">
                                       <i className="fa-brands fa-youtube"></i>
                   </a>
                 </div>
