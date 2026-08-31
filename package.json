@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "convert": "node scripts/convert.js",
-    "seo:check": "node scripts/seo-check.mjs"
+    "seo:check": "node scripts/seo-check.mjs",
+    "seo:indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "next": "^15.5.23",
